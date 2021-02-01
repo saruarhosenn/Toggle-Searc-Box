@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="header-search-wrapper">
+		<span class="search-main">
+			<i class="fa fa-search"></i>
+		</span>
+		<div class="search-form-main clearfix">
+			<form role="search" method="get" class="search-form" action="sitename.com/">
+				<label>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>
+		</div>
+	</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+
+			$('.header-search-wrapper .search-main').click(function() {
+				$('.search-form-main').toggleClass('active-search');
+				$('.search-form-main .search-field').focus();
+			});
+		});
+
+	</script>
+</body>
+
+</html>
