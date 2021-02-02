@@ -40,12 +40,16 @@ body {
 	z-index: 9999;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
 .search-form-main.active-search {
 	opacity: 1;
 	visibility: visible;
+	-webkit-transition: all .4s linear;
+	-o-transition: all .4s linear;
 	transition: all .4s linear;
 	top: 140%;
 }
